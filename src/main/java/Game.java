@@ -44,8 +44,9 @@ public class Game {
 			net += postMoney - preMoney;
 			calculateBets();
 
+			System.out.print("Net:");
+			System.out.printf("%.2f", net);
 			System.out.println();
-			System.out.printf("%.2f", "Net:" + net);
 			System.out.println("Loses:" + loses);
 			System.out.println("=========== Done ===========");
 			Thread.sleep(3000);
