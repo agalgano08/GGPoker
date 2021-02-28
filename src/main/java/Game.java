@@ -114,12 +114,13 @@ public class Game {
 	private static void setupBets() throws InterruptedException, AWTException, IOException, TesseractException {
 		preMoney = screenshotCards.screenshotMoney();
 		action.bet(bets);
+		Thread.sleep(5000);
 		action.click(action.dealLocation);
 		Thread.sleep(1000);
 		action.click(action.dealLocation);
 		Thread.sleep(3000);
 		action.click(action.cancelInsuranceLocation);
-		Thread.sleep(3000);
+		Thread.sleep(1500);
 	}
 
 	public static void setUpCardsandHand() throws AWTException, IOException {
